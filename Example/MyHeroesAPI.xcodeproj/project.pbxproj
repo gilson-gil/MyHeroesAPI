@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B793B1622F79DA40005E194 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B793B1022F79DA30005E194 /* Story.swift */; };
+		2B793B1722F79DA40005E194 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B793B1122F79DA30005E194 /* Comic.swift */; };
+		2B793B1822F79DA40005E194 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B793B1222F79DA30005E194 /* Character.swift */; };
+		2B793B1922F79DA40005E194 /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B793B1322F79DA40005E194 /* Series.swift */; };
+		2B793B1A22F79DA40005E194 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B793B1422F79DA40005E194 /* Event.swift */; };
+		2B793B1B22F79DA40005E194 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B793B1522F79DA40005E194 /* Image.swift */; };
+		2B793B1D22F79DB60005E194 /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B793B1C22F79DB60005E194 /* ListResponse.swift */; };
+		2B793B1F22F79DDB0005E194 /* ItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B793B1E22F79DDB0005E194 /* ItemResponse.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +37,14 @@
 
 /* Begin PBXFileReference section */
 		003CDAE66C8866B26CF31C5B /* Pods-MyHeroesAPI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHeroesAPI_Tests.release.xcconfig"; path = "Target Support Files/Pods-MyHeroesAPI_Tests/Pods-MyHeroesAPI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2B793B1022F79DA30005E194 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		2B793B1122F79DA30005E194 /* Comic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		2B793B1222F79DA30005E194 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		2B793B1322F79DA40005E194 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		2B793B1422F79DA40005E194 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		2B793B1522F79DA40005E194 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		2B793B1C22F79DB60005E194 /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+		2B793B1E22F79DDB0005E194 /* ItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResponse.swift; sourceTree = "<group>"; };
 		40DFB7FBB69956CB1EC9C3BA /* Pods-MyHeroesAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHeroesAPI_Example.debug.xcconfig"; path = "Target Support Files/Pods-MyHeroesAPI_Example/Pods-MyHeroesAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MyHeroesAPI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHeroesAPI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,13 +56,13 @@
 		607FACE51AFB9204008FA782 /* MyHeroesAPI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHeroesAPI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		65E4D37E55D29FAB25ED8116 /* MyHeroesAPI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MyHeroesAPI.podspec; path = ../MyHeroesAPI.podspec; sourceTree = "<group>"; };
+		65E4D37E55D29FAB25ED8116 /* MyHeroesAPI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MyHeroesAPI.podspec; path = ../MyHeroesAPI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		80E6E459326C54A6B07343F2 /* Pods-MyHeroesAPI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHeroesAPI_Example.release.xcconfig"; path = "Target Support Files/Pods-MyHeroesAPI_Example/Pods-MyHeroesAPI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8664011F8CD2C3EDB69610FE /* Pods_MyHeroesAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHeroesAPI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06404522A36A7D0AE280FFF /* Pods-MyHeroesAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHeroesAPI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MyHeroesAPI_Tests/Pods-MyHeroesAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3F997B276EDFFE276D991C6 /* Pods_MyHeroesAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHeroesAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F38AA3A6BF28C6B5E32BA51C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FD82C5D5C2B14F00F6EE477C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F38AA3A6BF28C6B5E32BA51C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FD82C5D5C2B14F00F6EE477C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +85,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B793B0F22F79D910005E194 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2B793B1222F79DA30005E194 /* Character.swift */,
+				2B793B1122F79DA30005E194 /* Comic.swift */,
+				2B793B1422F79DA40005E194 /* Event.swift */,
+				2B793B1522F79DA40005E194 /* Image.swift */,
+				2B793B1322F79DA40005E194 /* Series.swift */,
+				2B793B1022F79DA30005E194 /* Story.swift */,
+				2B793B1C22F79DB60005E194 /* ListResponse.swift */,
+				2B793B1E22F79DDB0005E194 /* ItemResponse.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +124,7 @@
 		607FACD21AFB9204008FA782 /* Example for MyHeroesAPI */ = {
 			isa = PBXGroup;
 			children = (
+				2B793B0F22F79D910005E194 /* Entities */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -147,7 +179,6 @@
 				C06404522A36A7D0AE280FFF /* Pods-MyHeroesAPI_Tests.debug.xcconfig */,
 				003CDAE66C8866B26CF31C5B /* Pods-MyHeroesAPI_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +259,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -352,8 +384,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B793B1D22F79DB60005E194 /* ListResponse.swift in Sources */,
+				2B793B1922F79DA40005E194 /* Series.swift in Sources */,
+				2B793B1B22F79DA40005E194 /* Image.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				2B793B1722F79DA40005E194 /* Comic.swift in Sources */,
+				2B793B1822F79DA40005E194 /* Character.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				2B793B1A22F79DA40005E194 /* Event.swift in Sources */,
+				2B793B1622F79DA40005E194 /* Story.swift in Sources */,
+				2B793B1F22F79DDB0005E194 /* ItemResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -500,6 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyHeroesAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -515,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyHeroesAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

@@ -1,0 +1,6 @@
+framework module MyHeroesAPI {
+  umbrella header "MyHeroesAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
