@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyHeroesAPI'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'API to consume information about Marvel Heroes'
 
 # This description is used to generate tags and improve search results.
@@ -28,16 +28,8 @@ API to fetch information about Marvel Heroes
   s.source           = { :git => 'https://github.com/gilson-gil/MyHeroesAPI.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '12.2'
+  s.ios.deployment_target = '11.0'
   s.swift_versions = '4.2'
 
   s.source_files = 'MyHeroesAPI/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'MyHeroesAPI' => ['MyHeroesAPI/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
