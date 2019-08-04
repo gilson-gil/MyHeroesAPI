@@ -8,31 +8,31 @@
 
 import Foundation
 
-enum UrlService {
+public enum UrlService {
     case image(urlString: String)
 }
 
 extension UrlService: Service {
-    var baseURL: URL? {
+    public var baseURL: URL? {
         return nil
     }
 
-    var path: String {
+    public var path: String {
         return ""
     }
 
-    var absoluteURL: URL? {
+    public var absoluteURL: URL? {
         switch self {
         case .image(let urlString):
             return URL(string: urlString)
         }
     }
 
-    var method: Method {
+    public var method: Method {
         return .get
     }
 
-    var parameters: Parameters? {
+    public var parameters: Parameters? {
         return nil
     }
 }
