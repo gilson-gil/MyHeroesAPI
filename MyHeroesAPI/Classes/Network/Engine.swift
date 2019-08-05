@@ -10,6 +10,12 @@ import Foundation
 
 public final class NetworkEngine<Target: Service> {
     public var tasks: [URLSessionDataTask] = []
+    private lazy var session: URLSession = {
+        var configuration: URLSessionConfiguration = URLSessionConfiguration.default
+        configuration.waitsForConnectivity = true
+        let session: URLSession = .init(configuration: configuration)
+        return session
+    }()
 
     public init() {}
 
@@ -19,7 +25,7 @@ public final class NetworkEngine<Target: Service> {
         let requestResult = RequestFactory().create(target: target)
         guard let request = validate(requestResult: requestResult, completion: completion) else { return }
 
-        let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+        let task = session.dataTask(with: request) { [weak self] data, response, error in
             self?.debug(request: request, response: response, error: error)
             guard self?.handleError(error, completion: completion) == true else { return }
 
@@ -41,7 +47,7 @@ public final class NetworkEngine<Target: Service> {
         let requestResult = RequestFactory().create(target: target)
         guard let request = validate(requestResult: requestResult, completion: completion) else { return }
 
-        let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+        let task = session.dataTask(with: request) { [weak self] data, response, error in
             self?.debug(request: request, response: response, error: error)
             guard self?.handleError(error, completion: completion) == true else { return }
 
