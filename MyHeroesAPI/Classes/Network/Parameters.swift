@@ -19,7 +19,8 @@ extension Parameters {
 extension Encodable {
     var parameters: Parameters? {
         guard let data = try? JSONEncoder().encode(self) else { return nil }
-        guard let parameters = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? Parameters else { return nil }
+        let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments)
+        guard let parameters = json as? Parameters else { return nil }
         return parameters
     }
 }

@@ -14,8 +14,8 @@ public final class NetworkEngine<Target: Service> {
     public init() {}
 
     public func request<T: Decodable>(target: Target,
-                               decoder: JSONDecoder = JSONDecoder(),
-                               completion: @escaping(Result<T?, NetworkError>) -> Void) {
+                                      decoder: JSONDecoder = JSONDecoder(),
+                                      completion: @escaping(Result<T?, NetworkError>) -> Void) {
         let requestResult = RequestFactory().create(target: target)
         guard let request = validate(requestResult: requestResult, completion: completion) else { return }
 
@@ -37,7 +37,7 @@ public final class NetworkEngine<Target: Service> {
     }
 
     public func requestData(target: Target,
-                     completion: @escaping(Result<Data, NetworkError>) -> Void) {
+                            completion: @escaping(Result<Data, NetworkError>) -> Void) {
         let requestResult = RequestFactory().create(target: target)
         guard let request = validate(requestResult: requestResult, completion: completion) else { return }
 
